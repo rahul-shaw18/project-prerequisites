@@ -1,0 +1,28 @@
+:root {
+    //color
+    --primary-color: #ffffff; //base-color 60% background
+    --secondry-color: #2c2c2c; //neutralise base-color 30% text
+    --tertiary-color: #4356ff; //action 10% button;
+
+    //font-size
+    --fnt-small: 12px; //content
+    --fnt-small-line-height: 16px;
+    --fnt-base: 14px; //sub-heading
+    --fnt-base-line-height: 20px;
+    --fnt-large: 16px; //heading
+    --fnt-large-line-height: 24px;
+
+}
+
+@media screen and (max-width:1024px) {
+
+    :root {
+        --fnt-small: 10px; //content
+        --fnt-small-line-height: 14px;
+        --fnt-base: 12px; //sub-heading
+        --fnt-base-line-height: 18px;
+        --fnt-large: 14px; //heading
+        --fnt-large-line-height: 22px;
+    }
+
+}
