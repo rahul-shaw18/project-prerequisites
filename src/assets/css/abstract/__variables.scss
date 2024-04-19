@@ -12,6 +12,14 @@
     --fnt-large: 16px; //heading
     --fnt-large-line-height: 24px;
 
+    // font family 
+    --fnt-regular: 'robotoregular'; //content
+    --fnt-regular-italic: 'robotoitalic'; //content
+    --fnt-medium: 'robotomedium'; //sub-heading
+    --fnt-medium-italic: 'robotomedium_italic'; //sub-heading
+    --fnt-bold: 'robotobold'; //heading
+    --fnt-bold-italic: 'robotobold_italic'; //heading
+
 }
 
 @media screen and (max-width:1024px) {
