@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class SidenavComponent {
 
-  isSidenavOpen: boolean = false;
+  isSidenavOpen: boolean = true;
 
   sidenavList = [
     { id: 1, label:'', childred: [{id:1.1, icon: 'icon-home', name: 'Dashboard', isSelcted: false } ]},

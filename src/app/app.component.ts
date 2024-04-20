@@ -13,6 +13,7 @@ import { LayoutComponent } from "./layout/layout.component";
 })
 export class AppComponent implements OnInit {
   title = 'project-prerequisites';
+  isDarkModeEnable: boolean = false;
 
   ngOnInit(): void {
     console.log('production', environment.production);

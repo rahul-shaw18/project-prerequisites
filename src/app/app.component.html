@@ -1,3 +1,2 @@
-<section class="w-full">
-    <app-layout></app-layout>
-</section>
+<app-layout class="w-full p-4 bg-primary" [ngClass]="{ 'theme-dark':isDarkModeEnable}"></app-layout>
+<button class="absolute p-2 border rounded-md right-6 top-6 bg-primary" [ngClass]="{ 'theme-dark':isDarkModeEnable}" (click)="isDarkModeEnable = !isDarkModeEnable"> {{isDarkModeEnable ? 'Light' : 'Dark'}}</button>

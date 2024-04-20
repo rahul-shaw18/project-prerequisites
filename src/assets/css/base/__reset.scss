@@ -1,5 +1,5 @@
 * {
-    @apply transition-colors duration-700 ease-in-out;
+    @apply transition-all duration-700 ease-in-out;
     font-family: var(--fnt-fam-regular);
     box-sizing: border-box;
 }
@@ -41,11 +41,7 @@ ol[role='list'] {
 /* Set core body defaults */
 body {
     min-height: 100vh;
-    line-height: 1.5;
-    background-color: #efefef;
-    color: var(--secondary-color);
-    padding: var(--lg);
-    
+    line-height: 1.5;   
 }
 
 nav{
@@ -119,6 +115,6 @@ textarea:not([rows]) {
 }
 
 app-root{
-    height: calc(100vh - 32px);
+    height: 100vh;
     display: flex;
 }
