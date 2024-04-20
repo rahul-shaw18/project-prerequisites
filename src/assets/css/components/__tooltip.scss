@@ -1,0 +1,9 @@
+.tooltip {
+    --tooltip-color: var(--primary-color); /* background color of tooltip */
+    --tooltip-text-color: var(--secondary-color); /* text color of tooltip */
+    &::before{
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+  

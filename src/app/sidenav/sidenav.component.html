@@ -1,0 +1,48 @@
+<nav
+  class="relative p-3 border rounded-xl bg-primary"
+  [ngClass]="isSidenavOpen ? 'w-60' : 'w-fit'"
+>
+  <section class="flex flex-col h-full">
+    <span
+      class="absolute flex p-2 border rounded-full cursor-pointer border-primary bg-tertiary text-primary icon-arrow right-[-20px] top-[40px]"
+      [ngClass]="isSidenavOpen ? 'rotate-180' : ''"
+      (click)="isSidenavOpen = !isSidenavOpen"
+    >
+    </span>
+    <header class="flex items-center h-12 gap-2">
+      <span class="flex justify-center w-6 icon-v"></span>
+      @if(isSidenavOpen){Comp Name}
+    </header>
+    <main class="">
+      @for(sidenav of sidenavList; track sidenav.id){ @if(isSidenavOpen){
+      <span
+        class="text-base font-semibold text-gray-500"
+        [textContent]="sidenav.label"
+      ></span>
+      } @else if(sidenav.id !=1) {
+      <span class="flex w-full py-[1px] my-1 bg-gray-500"></span>
+      } @for(child of sidenav.childred; track child.id){
+      <div class="flex items-center h-8 gap-2 cursor-pointer tooltip-right" [ngClass]="{'tooltip':!isSidenavOpen}" [attr.data-tip]="child.name">
+        <span class="flex justify-center w-6"  [ngClass]="child.icon"></span>
+        @if(isSidenavOpen){
+        <span class="text-sm font-semibold"
+          [ngClass]="{ hidden: !isSidenavOpen }"
+          [textContent]="child.name"
+        ></span>
+        }
+      </div>
+      } }
+    </main>
+    <footer>
+      <div class="flex items-center h-8 gap-2 cursor-pointer">
+        <span class="flex justify-center w-6 icon-home"></span>
+        @if(isSidenavOpen){
+        <span
+          [ngClass]="{ hidden: !isSidenavOpen }"
+          [textContent]="'Rahul Shaw'"
+        ></span>
+        }
+      </div>
+    </footer>
+  </section>
+</nav>

@@ -1,7 +1,14 @@
 :root {
+
+    //
+    --lg:16px;
+    --md:14px;
+    --sm:12px;
+
+
     //color
     --primary-color: #ffffff; //base-color 60% background
-    --secondry-color: #2c2c2c; //neutralise base-color 30% text
+    --secondary-color: #303030; //neutralise base-color 30% text
     --tertiary-color: #4356ff; //action 10% button;
 
     //font-size
@@ -11,26 +18,28 @@
     --fnt-base-line-height: 20px;
     --fnt-large: 16px; //heading
     --fnt-large-line-height: 24px;
+    --fnt-logo: 24px;
 
     // font family 
-    --fnt-regular: 'robotoregular'; //content
-    --fnt-regular-italic: 'robotoitalic'; //content
-    --fnt-medium: 'robotomedium'; //sub-heading
-    --fnt-medium-italic: 'robotomedium_italic'; //sub-heading
-    --fnt-bold: 'robotobold'; //heading
-    --fnt-bold-italic: 'robotobold_italic'; //heading
+    --fnt-fam-regular: 'robotoregular'; //content
+    --fnt-fam-regular-italic: 'robotoitalic'; //content
+    --fnt-fam-medium: 'robotomedium'; //sub-heading
+    --fnt-fam-medium-italic: 'robotomedium_italic'; //sub-heading
+    --fnt-fam-bold: 'robotobold'; //heading
+    --fnt-fam-bold-italic: 'robotobold_italic'; //heading
 
 }
 
 @media screen and (max-width:1024px) {
 
-    :root {
-        --fnt-small: 10px; //content
-        --fnt-small-line-height: 14px;
-        --fnt-base: 12px; //sub-heading
-        --fnt-base-line-height: 18px;
-        --fnt-large: 14px; //heading
-        --fnt-large-line-height: 22px;
-    }
+    // :root {
+    //     --fnt-small: 10px; //content
+    //     --fnt-small-line-height: 14px;
+    //     --fnt-base: 12px; //sub-heading
+    //     --fnt-base-line-height: 18px;
+    //     --fnt-large: 14px; //heading
+    //     --fnt-large-line-height: 22px;
+    //     --fnt-logo: 22px
+    // }
 
 }

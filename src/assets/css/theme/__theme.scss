@@ -1,30 +1,5 @@
 .theme-black{
-    --color-primary: hsl(0, 0%, 0%);
-    --color-secondary: hsl(0, 0%, 50%);
-    --background-color: #fff;
-}
-.theme-orange{
-    --color-primary: hsl(25, 100%, 50%);
-    --color-secondary: hsl(25, 100%, 65%);
-    --background-color: #000;
-}
-.theme-puple{
-    --color-primary: hsl(270, 100%, 50%);
-    --color-secondary: hsl(270, 100%, 75%);
-    --background-color: rgba(127, 56, 56, 0.933);
-}
-.theme-green{
-    --color-primary: hsl(120, 100%, 35%);
-    --color-secondary: hsl(120, 100%, 45%);
-    --background-color: rgba(127, 56, 56, 0.933);
-}
-.theme-blue{
-    --color-primary: hsl(220, 100%, 50%);
-    --color-secondary: hsl(220, 100%, 75%);
-    --background-color: rgba(127, 56, 56, 0.933);
-}
-.theme-red{
-    --color-primary: red;
-    --color-secondary: red;
-    --background-color: white;
+    --primary-color: #1D232A; //base-color 60% background
+    --secondary-color: #A6ADBB; //neutralise base-color 30% text
+    --tertiary-color: #4356ff;
 }

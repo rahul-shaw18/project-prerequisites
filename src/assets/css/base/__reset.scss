@@ -1,5 +1,7 @@
 * {
     @apply transition-colors duration-700 ease-in-out;
+    font-family: var(--fnt-fam-regular);
+    box-sizing: border-box;
 }
 
 /* Box sizing rules */
@@ -11,7 +13,6 @@
 
 /* Prevent font size inflation */
 html {
-    font-family: var(--fnt-regular);
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
@@ -41,6 +42,15 @@ ol[role='list'] {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    background-color: #efefef;
+    color: var(--secondary-color);
+    padding: var(--lg);
+    
+}
+
+nav{
+    display: flex;
+    height: 100%;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -63,6 +73,17 @@ h4 {
 }
 h1{
     font-size: var(--fnt-large);
+}
+header{
+    font-size: var(--fnt-logo);
+    font-family: var(--fnt-fam-bold);
+    padding-bottom: var(--lg);
+}
+
+footer{
+    margin-top: auto;
+    padding-top: var(--lg);
+    font-family: var(--fnt-fam-medium);
 }
 
 /* A elements that don't have a class get default styles */
@@ -95,4 +116,9 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
     scroll-margin-block: 5ex;
+}
+
+app-root{
+    height: calc(100vh - 32px);
+    display: flex;
 }

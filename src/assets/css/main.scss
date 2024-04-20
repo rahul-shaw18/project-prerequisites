@@ -4,8 +4,10 @@
 //base
 @import 'base/_reset';
 @import 'base/_typography';
+@import 'base/_icomoon';
 
 // component 
+@import 'components/_tooltip';
 @import 'components/_button';
 @import 'components/_alert';
 
